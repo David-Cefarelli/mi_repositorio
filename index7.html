@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos valores enteros x e y.
+        Posteriormente imprimir en pantalla en qué cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.)</title>
+</head>
+<body>
+    <script>
+            let x
+            let y
+            x=prompt("ingresar valor de x")
+            y=prompt("ingresar valor de y")
+            if ( x>0&y>0)       {document.write("este punto se ubica en el cuadrante 1º")}
+                else { if( x<0&y<0)     {document.write("este punto se ubica en el cuadrante 2º")} 
+                    else{ if (x>0&y<0)      {document.write("este punto se ubica en el cuadrante 3º")}  
+                        else {if  (x<0&y>0) {document.write("este punto se ubica en el cuadrante 4º")} 
+                            else { document.write("esta en punto 0")} }  }} 
+
+    </script>
+</body>
+</html>

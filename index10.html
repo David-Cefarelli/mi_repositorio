@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-Realizar un programa que acumule (sume) valores ingresados por teclado hasta ingresa el 9999 
+        (no sumar dicho valor, solamente indica que ha finalizado la carga).
+         Imprimir el valor acumulado e informar si dicho valor es cero, mayor a cero o menor a cero.</title>
+</head>
+<body>
+    <script>  
+      
+     
+        var suma=0;
+        do {
+            valor=parseInt(prompt("ingresa un valor(9999 para finalizar)"));
+           
+                suma=suma+valor;
+            
+        
+       
+       
+
+
+         }
+    while (valor!=9999); 
+    if (suma==0)  {
+            document.write(" el valor acumulado es igual a cero")
+        } else { if (suma > 0 ) {document.write(" el valor acumulado es mayor que cero")}
+    else  {document.write(" el valor acumulado es menor que cero")}} 
+    suma=suma-9999
+    document.write(" <br>")     
+    document.write("el valor acumulado es " + suma)
+            
+
+    </script>
+</body>
+</html>
